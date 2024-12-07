@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>2 distribuciones moleculares.md</title>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$','$'], ['\(','\)']],
+      displayMath: [['$$','$$'], ['\[','\]']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+</head>
+<body>
+<h1>Distribuciones moleculares</h1>
+<p>La presión, $p$, de un gas cuyo volumen es $V$ (el cual tiene $N$ moléculas) depende de su temperatura a través de la ecuación de estado, la cual se puede representar en una forma general como</p>
+<p>$$
+p = f \left( T, V, N \right)
+$$</p>
+<p>donde $f$ es alguna función. Un ejemplo de este tipo de ecuaciones de estado es la del gas ideal</p>
+<p>$$
+pV = Nk_B T
+$$</p>
+<p>Daniel Bernoulli intentó dar una explicación a la Ley de Boyle al considerar que los gases están formados por pequeñas partículas (moléculas). En su tiempo esta idea fue controversial. En esta sección llegaremos a la ecuación de estado del gas ideal usando la Teoría Cinética de los Gases (distribución  de Maxwell-Boltzmann).</p>
+<p>Para ello, sea $n$ el número de moléculas por unidad de volumen en un gas. Entonces, el número de moléculas por unidad de volumen que viajan con una rapidez entre $v$ y $v+dv$ está dada por $nf(v) dv$.</p>
+<p>Si es igualmente probable que todas las moléculas viajen en cualquier dirección, la fracción de moléculas que se encuentra en un elemento diferencial de ángulo sólido $d\Omega$ será</p>
+<p>$$
+\frac{d\Omega}{4\pi}
+$$</p>
+<p>Ahora si elegimos a una dirección particular, el ángulo sólido correspondiente a las moléculas que viajan entre los ángulos $\theta$ y $\theta + d\theta$ estará dado por</p>
+<p>$$
+d\Omega = 2\pi \sin \theta d\theta
+$$</p>
+<p>Una idea geométrica la encuentras en la siguiente figura.</p>
+<p><img alt="" src="https://i.imgur.com/Uih9hfC.png" /></p>
+<p>Esto implica que</p>
+<p>$$
+\frac{d\Omega}{4\pi} = \frac{1}{2} \sin \theta d\theta
+$$</p>
+<p>Por lo tanto, el número de moléculas por unidad de volumen que tienen rapidez entre $v$ y $v + dv$ que viajan entre los ángulos $\theta$ y $\theta + d\theta$ será</p>
+<p>$$
+nf(v) \, dv \, \frac{1}{2} \sin \theta d\theta
+$$</p>
+<p>Supongamos ahora que esa dirección particular sea de tal forma que las moléculas se dirijan a un muro de área $A$ (ver siguiente imagen). En un tiempo $dt$, las moléculas que viajan con un ángulo $\theta$ respecto a la normal con el muro estarán en un volumen</p>
+<p>$$
+Av \, dt \cos \theta
+$$</p>
+<p><img alt="" src="https://i.imgur.com/1Kirtr8.png" /></p>
+<p>Si multiplicamos este resultado por el número de moléculas por unidad de volumen, tendremos el número de moléculas que impactan al muro de área $A$ en un tiempo $dt$. Es decir,</p>
+<p>$$
+Av dt \cos \theta nf(v) \, dv \, \frac{1}{2} \sin \theta d\theta
+$$</p>
+<p>Por lo tanto, el número de moléculas que impactan al muro por unidad de área por unidad de tiempo y que tienen rapidez entre $v$ y $v + dv$ con ángulos entre $\theta$ y $\theta + d\theta$ está dado por</p>
+<p>$$
+v \cos \theta nf(v) \, dv \, \frac{1}{2} \sin \theta d\theta
+$$</p>
+<p>Este resultado será la base para la siguiente sección.</p>
+</body>
+</html>

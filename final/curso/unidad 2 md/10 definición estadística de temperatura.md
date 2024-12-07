@@ -1,0 +1,56 @@
+## Definición estadística de temperatura
+
+Supongamos que hay dos sistemas que pueden intercambiar energía entre ellos y además ambos están aislados, es decir, ambos sistemas se ponen en contacto térmico.
+
+$$
+\boxed{
+\begin{array}{c}
+\textbf{E}_1 \\
+\Omega_1 (E_1)
+\end{array}
+}
+\longleftrightarrow
+\boxed{
+\begin{array}{c}
+\textbf{E}_2 \\
+\Omega_2 (E_2)
+\end{array}
+}
+$$
+
+Las energías de los sistemas son $E_1$ y $E_2$ respectivamente. Entonces la energía total del sistema será $E = E_1 + E_2$. Como lo presentamos en la sección anterior, $E_1$ será suficiente para determinar el macroestado del sistema. Además, cada sistema puede estar en alguno de los microestados posibles. Asume que el sistema 1 puede estar en alguno de los $\Omega_1 (E_1)$ microestados y que el sistema 2 puede estar en alguno de los $\Omega_2 (E_2)$ microestados. El número total de microestados de todo el sistema será $\Omega_1 (E_1) \Omega_2 (E_2)$.
+
+Ahora dejemos evolucionar al sistema total con el tiempo de tal forma que los sistemas 1 y 2 llegan al equilibrio térmico. Esto significa que $E_1$ y $E_2$ serán valores fijos. En este caso lo que observamos es que el sistema parecería elegir una configuración macroscópica (macroestado) tal que maximice al número de microestados:
+
+- Cada uno de los posibles microestados de un sistema es igualmente probable.
+- La dinámica interna del sistema es tal que los microestados del sistema cambian constantemente.
+- Después de cierto periodo de tiempo, el suficiente para que el sistema esté en equilibrio térmico, el sistema "explorará" todos los posibles microestados y estará el mismo tiempo en cada uno de ellos hipótesis de ergodicidad.
+
+Esto implica que el sistema es más probable que se encuentre en una configuración que represente la mayoría de los microestados posibles.
+
+En nuestro ejemplo, la división más probable de energía entre los dos sistemas es aquella que maximice el producto $\Omega_1 (E_1) \Omega_2 (E_2)$. Usando herramientas de cálculo diferencial, realicemos variaciones pequeñas de $E_1$:
+
+$$
+\frac{d}{dE_1} \left( \Omega_1 (E_1) \Omega_2 (E_2) \right) = 0 \Rightarrow \frac{d \ln \Omega_1}{dE_1} = \frac{d \ln \Omega_2}{dE_2}
+$$
+
+Esta condición nos ayuda a definir la división de energía más probable entre los dos sistemas si se les permite intercambiar energía ya que maximiza el número total de microestados. A esta división de energía se le relaciona también con el hecho de que dos cuerpos estén a la misma temperatura. Por lo tanto, el término
+
+$$
+\frac{d \ln \Omega}{dE}
+$$
+
+se relaciona con la temperatura $T$ (recuerda que $T_1 = T_2$). De esta manera, la temperatura estará definida como
+
+$$
+\frac{1}{k_B T} = \frac{d \ln \Omega}{dE} ; \quad k_B = 1.3807 \times 10^{-23} \, JK^{-1}
+$$
+
+donde $k_B$ es conocida como la constante de Boltzmann y $T$ está medida en grados Kelvin. Otra forma de escribir la ecuación anterior es
+
+$$
+\frac{1}{T} = \frac{dS}{dE} ; \quad S = k_B \ln \Omega
+$$
+
+donde $S$ es conocida como la entropía del sistema. Recuerda esta ecuación en tu último semestre de la licenciatura en Física donde cursarás Física Estadística.
+
